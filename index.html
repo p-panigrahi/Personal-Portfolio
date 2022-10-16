@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="logo">Portfolio..</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars bar" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI Developer</p>
+                <h1>Hi, I'm <span>Prabhudutta</span><br> Panigrahi From India</h1>
+            </div>
+            <div class="git">
+                <a class="btn3" href="https://github.com/p-panigrahi" target="_blank">GITHUB</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./public/img/about me.gif" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Seeking a beginner role to enhance and explore my technical Knowledge gained at Biju Patnaik University in the
+                        last four years. I hold a B-Tech degree from Satyasai Engineering College and won the quiz challenge held ate the
+                        campus and ability to multi-task work under tright deadlines with efficient analytical and planning skills along
+                        with the ability to work in teams.
+                        </p>
+                        <br>
+                        <p>Right now My goal is to obtain a challenging position for the best utilization of my skill and looking for
+                            opportunities to grow my technical skill as well as industrial skill ready to , fulfill organizational goals.
+                            </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Info')">Personal Information</p>
+                        <p class="tab-links" onclick="opentab('address')">Address</p>
+                    </div>
+                    <div class="tab-containes active-tab" id="skills">
+                        <ul>
+                            <li><span>IDE'S / Platform</span><br>Visual Studio , Sublime / Windows</li>
+                            <li><span>Frontend(Client Side Language)</span><br>HTML5, CSS3, JavaScript, ECMA8, Ajax, Json</li>
+                            <li><span>Library / CSS Preprocessor</span><br>jQuery / Sass, Less</li>
+                            <li><span>Framework</span><br>Bootstrap5, Tailwind CSS</li>
+                            <li><span>Backend(Server side Language) / Database</span><br>Node JS, Express JS(Middleware) / Mongo DB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-containes " id="education">
+                        <ul>
+                            <li><span>UI Full Stack Web Development (2022)</span><br>Naresh It  institute</li>
+                           <li><span>B-Tech (2016-2019)</span><br>Satyasai Engineering College</li>
+                           <li><span>12th (2014-2015)</span><br>R.D.S College of Science</li>
+                           <li><span>10th 2013</span><br>Saraswati Shishu Vidya Mandir</li>
+                        </ul>
+                    </div>
+                    <div class="tab-containes " id="Info">
+                        <ul>
+                            <li><span>Father Name</span><br>Ranjan Kumar Panigrahi</li>
+                           <li><span>Mother Name</span><br>Sanjukta Panigrahi</li>
+                           <li><span>Date of Birth</span><br>03/09/1997</li>
+                           <li><span>Sex</span><br>Male</li>
+                           <li><span>Nationality</span><br>Indian</li>
+                           <li><span>Marital Status</span><br>Single</li>
+                           <li><span>Language</span><br>English, Oriya, Hindi</li>
+                        </ul>
+                    </div>
+                    <div class="tab-containes " id="address">
+                        <ul>
+                            <li><span>Curent Address</span><br>: House No 129 Unit-3,Near Ram
+                                Mandir Temple,Bhubaneswar,Odisha,750017</li>
+                           <li><span>Parmanent Address</span><br>Damodarpur,Motiganj Bazar,Balasore,756003</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-servicestack"></i>
+                    <h2>Web Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut tempora magni! Unde quis odit at labore? Aspernatur, quos voluptates.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut tempora magni! Unde quis odit at labore? Aspernatur, quos voluptates.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI Developement</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut tempora magni! Unde quis odit at labore? Aspernatur, quos voluptates.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./public/img/work-4.gif"  alt="">
+                    <div class="layer">
+                        <h3 class="h3">Emoji Newton Cradle</h3>
+                        <p>This is a Newton Cradle Project , in this Project i am using only (HTML5,CSS3)This is a CSS Animation Based Project</p>
+                        <a href="https://p-panigrahi.github.io/Emoji-Newton--Cradle/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./public/img/work-5.gif" alt="">
+                    <div class="layer">
+                        <h3>Shopper Page</h3>
+                        <p>The is a Responsive E-Com Landing Page in this project i am using only (HTML5,CSS3) Code in Github</p>
+                        <a href="https://p-panigrahi.github.io/Shopper/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./public/img/work-6.gif" alt="">
+                    <div class="layer">
+                        <h3>RedStore WebSite</h3>
+                        <p>The is a Responsive Shopping E-Com Multi Page Website, in this project i am using (HTML5,CSS3,JavaScript) Code in Github</p>
+                        <a href="https://p-panigrahi.github.io/e-Commerce_website_deisgn_demo/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./public/img/work-7.gif" alt="">
+                    <div class="layer">
+                        <h3>Education Site</h3>
+                        <p>The is a Responsive Education Landing Page in this project (HTML5,CSS3,Javascript) Code i Github</p>
+                        <a href="https://p-panigrahi.github.io/Education-Site/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./public/img/work-8.gif" alt="">
+                    <div class="layer">
+                        <h3>File Shareing App</h3>
+                        <p>Comeing Soon...</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./public/img/work-10.gif" alt="">
+                    <div class="layer">
+                        <h3>Wather App</h3>
+                        <p>Coming Soon....</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./public/img/work-12.gif" alt="">
+                    <div class="layer">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>Coming Soon...</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./public/img/work-13.gif" alt="">
+                    <div class="layer">
+                        <h3>Scientific Calculator</h3>
+                        <p>Coming Soon...</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Cotact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i> prabhuduttapanigrahi3073@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-7008291056</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./public/file/Aman(Resume).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder=" Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyrigt @ Prabhudutta Panigrahi</p>
+        </div>
+    </div>
+
+    <script src="./src/script.js"></script>
+    
+</body>
+</html>
